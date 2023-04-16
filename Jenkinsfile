@@ -3,7 +3,7 @@ pipeline {
         docker { image 'python:3.10' }
     }
     stages {
-        stage('Task') {
+        stage('task') {
             steps {
                 sh 'python main.py'
             }
