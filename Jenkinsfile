@@ -1,10 +1,10 @@
-pipeline{
-    agent{
-        docker: { image:'python:3.10' }
+pipeline {
+    agent {
+        docker { image 'python:3.10' }
     }
-    stages{
-        stage("task"){
-            steps{
+    stages {
+        stage('Task') {
+            steps {
                 sh 'python main.py'
             }
         }
